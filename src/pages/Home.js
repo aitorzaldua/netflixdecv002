@@ -23,22 +23,22 @@ const Home = () => {
 
   useEffect(() => {
     async function fetchMyList() {
-      //  await Moralis.start({
-      //     serverUrl: "https://3t2cfz3eqrvs.usemoralis.com:2053/server",
-      //     appId: "Z6nLxgwmofPx7Or7bYK6vsINYuYWxNf0FQnDRjFn",
-      //   }); //if getting errors add this 
-
+      await Moralis.start({
+        serverUrl: "https://3t2cfz3eqrvs.usemoralis.com:2053/server",
+        appId: "Z6nLxgwmofPx7Or7bYK6vsINYuYWxNf0FQnDRjFn",
+      });
       try {
-        const theList = await Moralis.Cloud.run("getMyList", { addrs: account });
+        const theList = await Moralis.Cloud.run("getMyList", {
+          addrs: account,
+        });
 
         const filterdA = movies.filter(function (e) {
           return theList.indexOf(e.Name) > -1;
         });
 
         setMyMovies(filterdA);
-        
       } catch (error) {
-        console.error(error)
+        console.error(error);
       }
     }
 
@@ -78,8 +78,8 @@ const Home = () => {
         <TabList defaultActiveKey={1} tabStyle="bar">
           <Tab tabKey={1} tabName={"Movies"}>
             <div className="scene">
-              <img src={movies[0].Scene} className="sceneImg"></img>
-              <img className="sceneLogo" src={movies[0].Logo}></img>
+              <img src={movies[0].Scene} className="sceneImg" alt=""></img>
+              <img className="sceneLogo" src={movies[0].Logo} alt=""></img>
               <p className="sceneDesc">{movies[0].Description}</p>
               <div className="playButton">
                 <Button
@@ -107,6 +107,7 @@ const Home = () => {
                   return (
                     <img
                       src={e.Thumnbnail}
+                      alt = ""
                       className="thumbnail"
                       onClick={() => {
                         setSelectedFilm(e);
@@ -124,24 +125,24 @@ const Home = () => {
               {myMovies && isAuthenticated ? (
                 <>
                   <div className="ownThumbs">
-                    {
-                      myMovies.map((e) => {
-                        return (
-                          <img
-                            src={e.Thumnbnail}
-                            className="thumbnail"
-                            onClick={() => {
-                              setSelectedFilm(e);
-                              setVisible(true);
-                            }}
-                          ></img>
-                        );
-                      })}
+                    {myMovies.map((e) => {
+                      return (
+                        <img
+                          src={e.Thumnbnail}
+                          alt = ""
+                          className="thumbnail"
+                          onClick={() => {
+                            setSelectedFilm(e);
+                            setVisible(true);
+                          }}
+                        ></img>
+                      );
+                    })}
                   </div>
                 </>
               ) : (
                 <div className="ownThumbs">
-                  You need to Authenicate TO View Your Own list
+                  You need to Authenicate to View Your Own list
                 </div>
               )}
             </div>
@@ -156,8 +157,8 @@ const Home = () => {
               width="1000px"
             >
               <div className="modalContent">
-                <img src={selectedFilm.Scene} className="modalImg"></img>
-                <img className="modalLogo" src={selectedFilm.Logo}></img>
+                <img src={selectedFilm.Scene} className="modalImg" alt=""></img>
+                <img className="modalLogo" src={selectedFilm.Logo} alt=""></img>
                 <div className="modalPlayButton">
                   {isAuthenticated ? (
                     <>
