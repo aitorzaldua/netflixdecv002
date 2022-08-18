@@ -1,11 +1,5 @@
-import titanicS from "../images/titanicScene.png";
-import tita from "../images/tit.png";
-import movieLogo from "../images/movieLogo.png";
-import spidey from "../images/spidey.png";
-import jumanji from "../images/jumanji.png";
-import wolf from "../images/wolf.png";
-import mrs from "../images/mrs.png";
-import hob from "../images/hob.png";
+
+
 import spideyLogo from "../images/spideyLogo.png";
 import spideyScene from "../images/spideyScene.png";
 import moralis from "../images/moralis.png";
@@ -14,36 +8,36 @@ import moralisScene from "../images/moralisScene.png";
 import jam from "../images/jam.png";
 import jamLogo from "../images/jamLogo.png";
 import jamScene from "../images/jamScene.png";
-import bayw from "../images/bayw.png";
-import shrek from "../images/shrek.png";
-import lucy from "../images/lucy.png";
-import topgu from "../images/topgu.png";
-import imit from "../images/imit.png";
-import reven from "../images/reven.png";
-import tomb from "../images/tomb.png";
-import amaz from "../images/amaz.png";
-import bigs from "../images/bigs.png";
-import secona from "../images/secona.png";
-import ted from "../images/ted.png";
-import amerp from "../images/amerp.png";
+
+import kaff from "../images/kaff.jpeg";
+import kingAff from "../images/the-kings-affection1.jpeg";
+import proposal from "../images/a-business-proposal.png";
+import startup from "../images/startup.png";
+import kingdom from "../images/kingdom.png";
+import myName from "../images/my-name.png"
+import woo from "../images/Extraordinary-Attorney-Woo.png";
+import chachacha from "../images/Hometown-Cha-Cha-Cha.png";
+import runon from "../images/runon.png";
+import squid from "../images/Squid-Game.png";
+import vincenzo from "../images/vincenzo.png"
 
 export const movies = [
   {
-    Movie: "",
-    Thumnbnail: tita,
-    Scene: titanicS,
-    Logo: movieLogo,
+    Movie: "https://gateway.pinata.cloud/ipfs/QmaY3g2rYRDSqzLL7ZCDbj1LEkSe8uTYqj9ehj8YgE2pA9",
+    Thumnbnail: kingAff,
+    Scene: kaff,
+    Logo: spideyLogo,
     Name: "Titanic",
     Description:
-      "Staring Kate Winslet and Leonardo DiCaprio. The two play characters who are of different social classes. They fall in love after meeting aboard the ship, but it was not good for a rich girl to fall in love with a poor boy in 1912.",
+      " pata Staring Kate Winslet and Leonardo DiCaprio. The two play characters who are of different social classes. They fall in love after meeting aboard the ship, but it was not good for a rich girl to fall in love with a poor boy in 1912.",
     Genre: "Romance, Drama",
     Actors: "Kate Winslet, Leonardo DiCaprio",
     Year: "1998",
     Duration: "3h 14min",
   },
   {
-    Movie: "https://ipfs.moralis.io:2053/ipfs/QmNtxfy9Mk8qLsdGnraHGk5XDim8ayR93krM24ETJEd2bG/media/0",
-    Thumnbnail: spidey,
+    Movie: "https://gateway.pinata.cloud/ipfs/QmPbWLgP5t9q2YTcbR6jtNXpQgc1LrjDSTSMZEayUmpbe5",
+    Thumnbnail: proposal,
     Scene: spideyScene,
     Logo: spideyLogo,
     Name: "Spiderman Homecoming",
@@ -54,20 +48,20 @@ export const movies = [
     Duration: "2h 13min",
   },
   {
-    Movie: "",
-    Thumnbnail: jumanji,
-    Scene: "",
-    Logo: "",
-    Name: "Jumanji",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
+    Movie: "https://gateway.pinata.cloud/ipfs/QmfVjDy9Z4KLhuDY5hbPkbHtC2eChnxHb173afk4xbbxFr",
+    Thumnbnail: startup,
+    Scene: spideyScene,
+    Logo: spideyLogo,
+    Name: "Spiderman Homecoming",
+    Description: "Peter Parker tries to stop the Vulture from selling weapons made with advanced Chitauri technology while trying to balance his life as an ordinary high school student.",
+    Genre: "Action, Superhero, Comedy",
+    Actors: "Tom Holland, Zendeya",
+    Year: "2017",
+    Duration: "2h 13min",
   },
   {
-    Movie: "https://ipfs.moralis.io:2053/ipfs/QmWWnyCZwh8RVnamjeLhGmpYM2C3oDr3FzF7zgv5ur24z5/media/0",
-    Thumnbnail: moralis,
+    Movie: "https://gateway.pinata.cloud/ipfs/QmXoDy7o4Cd8G8vpYjzF49Ai7vozonfD1xF6Yyfdk1a7Pf",
+    Thumnbnail: kingdom,
     Scene: moralisScene,
     Logo: moralisLogo,
     Name: "Moralis Rap",
@@ -78,32 +72,8 @@ export const movies = [
     Duration: "1min 2sec",
   },
   {
-    Movie: "",
-    Thumnbnail: wolf,
-    Scene: "",
-    Logo: "",
-    Name: "Wolf Of Wallstreet",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
-  },
-  {
-    Movie: "",
-    Thumnbnail: mrs,
-    Scene: "",
-    Logo: "",
-    Name: "Mr and Mrs Smith",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
-  },
-  {
-    Movie: "https://ipfs.moralis.io:2053/ipfs/QmSi84pJTjBXmXREN8NMRuRnK9oobYb8QcPZsXUj3GZr12/media/0",
-    Thumnbnail: jam,
+    Movie: "https://gateway.pinata.cloud/ipfs/QmX9xbzP2cixP1EmbxyNCFFR3fKo1Xar3UdfSTurWf2wn7",
+    Thumnbnail: myName,
     Scene: jamScene,
     Logo: jamLogo,
     Name: "Jam Doughnut",
@@ -114,159 +84,63 @@ export const movies = [
     Duration: "1min 5sec",
   },
   {
-    Movie: "",
-    Thumnbnail: hob,
-    Scene: "",
-    Logo: "",
-    Name: "Hobbit",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
+    Movie: "https://gateway.pinata.cloud/ipfs/QmeZrvMEegiho73jvveyhXrynARttHwuMQ3HRoCcLvKxZD",
+    Thumnbnail: woo,
+    Scene: jamScene,
+    Logo: jamLogo,
+    Name: "Jam Doughnut",
+    Description: "In this masterpiece a wild Jay, endulges in flavorful jam doughnut. Be warned, this video is most certainly going to leave you craving for some sweets.",
+    Genre: "Silent Mukbang",
+    Actors: "Jay",
+    Year: "2022",
+    Duration: "1min 5sec",
   },
   {
-    Movie: "",
-    Thumnbnail: shrek,
-    Scene: "",
-    Logo: "",
-    Name: "",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
+    Movie: "https://gateway.pinata.cloud/ipfs/Qmd4i3V7WJc2KNtG2rQoCFQYwdxDMckaB3PEbXACYMToyw",
+    Thumnbnail: chachacha,
+    Scene: jamScene,
+    Logo: jamLogo,
+    Name: "Jam Doughnut",
+    Description: "In this masterpiece a wild Jay, endulges in flavorful jam doughnut. Be warned, this video is most certainly going to leave you craving for some sweets.",
+    Genre: "Silent Mukbang",
+    Actors: "Jay",
+    Year: "2022",
+    Duration: "1min 5sec",
   },
   {
-    Movie: "",
-    Thumnbnail: reven,
-    Scene: "",
-    Logo: "",
-    Name: "",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
+    Movie: "https://gateway.pinata.cloud/ipfs/QmYRdi6WDTowVnKdyjpG8oFSxpMT1JhBJf5MSrw7T6GawV",
+    Thumnbnail: runon,
+    Scene: jamScene,
+    Logo: jamLogo,
+    Name: "Jam Doughnut",
+    Description: "In this masterpiece a wild Jay, endulges in flavorful jam doughnut. Be warned, this video is most certainly going to leave you craving for some sweets.",
+    Genre: "Silent Mukbang",
+    Actors: "Jay",
+    Year: "2022",
+    Duration: "1min 5sec",
   },
   {
-    Movie: "",
-    Thumnbnail: imit,
-    Scene: "",
-    Logo: "",
-    Name: "",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
+    Movie: "https://gateway.pinata.cloud/ipfs/QmV3reeTockbC2bsfHKDW8Ljy7motYoLGJx6g7PQhx3Nac",
+    Thumnbnail: squid,
+    Scene: jamScene,
+    Logo: jamLogo,
+    Name: "Jam Doughnut",
+    Description: "In this masterpiece a wild Jay, endulges in flavorful jam doughnut. Be warned, this video is most certainly going to leave you craving for some sweets.",
+    Genre: "Silent Mukbang",
+    Actors: "Jay",
+    Year: "2022",
+    Duration: "1min 5sec",
   },
   {
-    Movie: "",
-    Thumnbnail: topgu,
-    Scene: "",
-    Logo: "",
-    Name: "",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
-  },
-  {
-    Movie: "",
-    Thumnbnail: lucy,
-    Scene: "",
-    Logo: "",
-    Name: "",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
-  },
-  {
-    Movie: "",
-    Thumnbnail: bayw,
-    Scene: "",
-    Logo: "",
-    Name: "",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
-  },
-  {
-    Movie: "",
-    Thumnbnail: tomb,
-    Scene: "",
-    Logo: "",
-    Name: "",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
-  },
-  {
-    Movie: "",
-    Thumnbnail: amaz,
-    Scene: "",
-    Logo: "",
-    Name: "",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
-  },
-  {
-    Movie: "",
-    Thumnbnail: bigs,
-    Scene: "",
-    Logo: "",
-    Name: "",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
-  },
-  {
-    Movie: "",
-    Thumnbnail: secona,
-    Scene: "",
-    Logo: "",
-    Name: "",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
-  },
-  {
-    Movie: "",
-    Thumnbnail: ted,
-    Scene: "",
-    Logo: "",
-    Name: "",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
-  },
-  {
-    Movie: "",
-    Thumnbnail: amerp,
-    Scene: "",
-    Logo: "",
-    Name: "",
-    Description: "",
-    Genre: "",
-    Actors: "",
-    Year: "",
-    Duration: "",
+    Movie: "https://gateway.pinata.cloud/ipfs/QmSmQuJtCF6DVmHeuQrzgMRNaKV1Y49T3fiRFnfqupJWMt",
+    Thumnbnail: vincenzo,
+    Scene: jamScene,
+    Logo: jamLogo,
+    Name: "Jam Doughnut",
+    Description: "In this masterpiece a wild Jay, endulges in flavorful jam doughnut. Be warned, this video is most certainly going to leave you craving for some sweets.",
+    Genre: "Silent Mukbang",
+    Actors: "Jay",
+    Year: "2022",
+    Duration: "1min 5sec",
   },
 ];

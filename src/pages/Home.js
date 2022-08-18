@@ -14,6 +14,7 @@ import {
 import { movies } from "../helpers/library";
 import { useState } from "react";
 import { useMoralis } from "react-moralis";
+import logoK from "../images/logoKdrama.png";
 
 const Home = () => {
   const [visible, setVisible] = useState(false);
@@ -76,12 +77,18 @@ const Home = () => {
       </div>
       <div className="topBanner">
         <TabList defaultActiveKey={1} tabStyle="bar">
-          <Tab tabKey={1} tabName={"Movies"}>
+          <Tab tabKey={1} tabName={"K-Dramas"}>
             <div className="scene">
               <img src={movies[0].Scene} className="sceneImg" alt=""></img>
-              <img className="sceneLogo" src={movies[0].Logo} alt=""></img>
-              <p className="sceneDesc">{movies[0].Description}</p>
-              <div className="playButton">
+              <img className="sceneLogo" src={logoK} alt=""></img>
+              <p className="sceneDesc">
+                Do you like K-Dramas? This is the perfect place for you. A
+                completely decentralized environment to watch your favorite
+                K-dramas trailers. This is a website built as part of a
+                developer portfolio, nothing else is intended. If you have any
+                questions about copyright, please feel free to write me.
+              </p>
+              {/* <div className="playButton">
                 <Button
                   icon="chevronRightX2"
                   text="Play"
@@ -97,17 +104,17 @@ const Home = () => {
                     console.log(myMovies);
                   }}
                 />
-              </div>
+              </div> */}
             </div>
 
-            <div className="title">Movies</div>
+            <div className="title">K-Dramas Trailers</div>
             <div className="thumbs">
               {movies &&
                 movies.map((e) => {
                   return (
                     <img
                       src={e.Thumnbnail}
-                      alt = ""
+                      alt=""
                       className="thumbnail"
                       onClick={() => {
                         setSelectedFilm(e);
@@ -118,7 +125,7 @@ const Home = () => {
                 })}
             </div>
           </Tab>
-          <Tab tabKey={2} tabName={"Series"} isDisabled={true}></Tab>
+          <Tab tabKey={2} tabName={"Movies"} isDisabled={true}></Tab>
           <Tab tabKey={3} tabName={"MyList"}>
             <div className="ownListContent">
               <div className="title">Your Library</div>
@@ -129,7 +136,7 @@ const Home = () => {
                       return (
                         <img
                           src={e.Thumnbnail}
-                          alt = ""
+                          alt=""
                           className="thumbnail"
                           onClick={() => {
                             setSelectedFilm(e);
