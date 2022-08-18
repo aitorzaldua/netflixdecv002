@@ -14,7 +14,7 @@ import {
 import { movies } from "../helpers/library";
 import { useState } from "react";
 import { useMoralis } from "react-moralis";
-import logoK from "../images/logoKdrama.png";
+import logoK from "../images/klogonbg.png";
 
 const Home = () => {
   const [visible, setVisible] = useState(false);
